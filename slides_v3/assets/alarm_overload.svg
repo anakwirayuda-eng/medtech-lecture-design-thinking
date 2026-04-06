@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Alarm overload visual</title>
+  <desc id="desc">Stylized medical monitor view with stacked alarms, waveforms, and competing signals.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0d1d25"/>
+      <stop offset="55%" stop-color="#132d38"/>
+      <stop offset="100%" stop-color="#1d3a45"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" x2="1">
+      <stop offset="0%" stop-color="#203744" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#152b36" stop-opacity="0.92"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="46" y="40" width="1508" height="820" rx="32" fill="none" stroke="#89b4b2" stroke-opacity="0.18" stroke-width="2"/>
+
+  <rect x="94" y="84" width="1412" height="92" rx="22" fill="url(#card)" stroke="#d56743" stroke-opacity="0.32"/>
+  <text x="132" y="140" fill="#f4ebe4" font-family="Space Grotesk, Arial, sans-serif" font-size="44" font-weight="700">Alarm Fatigue</text>
+  <text x="132" y="176" fill="#d6e1dd" font-family="IBM Plex Mono, monospace" font-size="20">When every signal screams, meaning disappears.</text>
+
+  <g transform="translate(98 220)">
+    <rect width="930" height="520" rx="28" fill="#0f1a21" stroke="#8db3b8" stroke-opacity="0.18"/>
+    <text x="36" y="52" fill="#d8e5df" font-family="IBM Plex Mono, monospace" font-size="22">Bedside Monitor</text>
+
+    <g transform="translate(0 0)">
+      <path d="M42 120 C 90 120, 96 48, 148 48 S 206 210, 256 210 S 314 120, 358 120 S 420 182, 470 182 S 532 58, 592 58 S 648 220, 716 220 S 788 120, 854 120" fill="none" stroke="#67f7c7" stroke-width="6" filter="url(#softGlow)"/>
+      <text x="882" y="126" fill="#67f7c7" font-family="IBM Plex Mono, monospace" font-size="24">HR 124</text>
+    </g>
+
+    <g transform="translate(0 120)">
+      <path d="M40 110 L 120 110 L 150 40 L 178 178 L 214 88 L 288 88 L 318 138 L 354 54 L 410 54 L 470 110 L 560 110 L 604 64 L 688 64 L 742 150 L 842 150" fill="none" stroke="#74c0fc" stroke-width="5" filter="url(#softGlow)"/>
+      <text x="882" y="116" fill="#74c0fc" font-family="IBM Plex Mono, monospace" font-size="24">SpO2 88%</text>
+    </g>
+
+    <g transform="translate(0 250)">
+      <path d="M42 76 C 122 76, 162 150, 250 150 S 390 52, 470 52 S 620 168, 716 168 S 812 84, 870 84" fill="none" stroke="#f4c56d" stroke-width="5" filter="url(#softGlow)"/>
+      <text x="882" y="90" fill="#f4c56d" font-family="IBM Plex Mono, monospace" font-size="24">RESP 31</text>
+    </g>
+
+    <g transform="translate(0 388)">
+      <path d="M42 50 L 118 50 L 184 126 L 262 12 L 316 96 L 390 96 L 432 62 L 520 62 L 602 140 L 700 22 L 780 22 L 870 90" fill="none" stroke="#f28779" stroke-width="5" filter="url(#softGlow)"/>
+      <text x="882" y="58" fill="#f28779" font-family="IBM Plex Mono, monospace" font-size="24">BP 83/52</text>
+    </g>
+
+    <g opacity="0.12" stroke="#cbd7d4">
+      <line x1="42" y1="88" x2="880" y2="88"/>
+      <line x1="42" y1="208" x2="880" y2="208"/>
+      <line x1="42" y1="338" x2="880" y2="338"/>
+      <line x1="42" y1="466" x2="880" y2="466"/>
+      <line x1="42" y1="522" x2="880" y2="522"/>
+      <line x1="42" y1="24" x2="42" y2="522"/>
+      <line x1="182" y1="24" x2="182" y2="522"/>
+      <line x1="322" y1="24" x2="322" y2="522"/>
+      <line x1="462" y1="24" x2="462" y2="522"/>
+      <line x1="602" y1="24" x2="602" y2="522"/>
+      <line x1="742" y1="24" x2="742" y2="522"/>
+    </g>
+  </g>
+
+  <g transform="translate(1070 220)">
+    <rect width="430" height="520" rx="28" fill="url(#card)" stroke="#d56743" stroke-opacity="0.28"/>
+    <text x="34" y="52" fill="#f6efe8" font-family="Space Grotesk, Arial, sans-serif" font-size="26" font-weight="700">Stacked Alerts</text>
+
+    <g transform="translate(26 92)">
+      <rect width="378" height="66" rx="18" fill="#853f33"/>
+      <text x="24" y="39" fill="#fff6f2" font-family="IBM Plex Mono, monospace" font-size="22">HIGH PRIORITY | PVC DETECTED</text>
+    </g>
+    <g transform="translate(26 174)">
+      <rect width="378" height="66" rx="18" fill="#9f5236"/>
+      <text x="24" y="39" fill="#fff6f2" font-family="IBM Plex Mono, monospace" font-size="22">MEDIUM | SENSOR DISPLACED</text>
+    </g>
+    <g transform="translate(26 256)">
+      <rect width="378" height="66" rx="18" fill="#b36c37"/>
+      <text x="24" y="39" fill="#fff8ef" font-family="IBM Plex Mono, monospace" font-size="22">MEDIUM | LOW BATTERY</text>
+    </g>
+    <g transform="translate(26 338)">
+      <rect width="378" height="66" rx="18" fill="#c48846"/>
+      <text x="24" y="39" fill="#fff9f0" font-family="IBM Plex Mono, monospace" font-size="22">LOW | SPO2 CHECK LEAD</text>
+    </g>
+
+    <g transform="translate(34 436)">
+      <circle cx="28" cy="28" r="28" fill="#d56743"/>
+      <text x="18" y="37" fill="#fff" font-family="Space Grotesk, Arial, sans-serif" font-size="24" font-weight="700">!</text>
+      <text x="74" y="22" fill="#f6efe8" font-family="Space Grotesk, Arial, sans-serif" font-size="22" font-weight="700">Human factors insight</text>
+      <text x="74" y="52" fill="#d7dfdb" font-family="Source Sans 3, Arial, sans-serif" font-size="22">A staff member cannot treat every signal as equally urgent for 12 hours straight.</text>
+    </g>
+  </g>
+
+  <g transform="translate(94 782)">
+    <rect width="1412" height="74" rx="22" fill="rgba(255,255,255,0.06)" stroke="#89b4b2" stroke-opacity="0.18"/>
+    <text x="34" y="48" fill="#eff5f1" font-family="Space Grotesk, Arial, sans-serif" font-size="28" font-weight="700">Design implication:</text>
+    <text x="300" y="48" fill="#d3e0db" font-family="Source Sans 3, Arial, sans-serif" font-size="28">Stratify alarms. Reduce false alerts. Match signal intensity to clinical meaning.</text>
+  </g>
+</svg>

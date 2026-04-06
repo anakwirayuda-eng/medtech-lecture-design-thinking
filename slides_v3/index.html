@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Thinking dan Human Factors dalam Inovasi Digital Kedokteran</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    <div class="slide-counter" id="slideCounter">1 / 26</div>
+    <div class="controls" aria-hidden="true">
+        <button class="nav-btn" id="prevBtn" onclick="changeSlide(-1)">&#8249;</button>
+        <button class="nav-btn" id="nextBtn" onclick="changeSlide(1)">&#8250;</button>
+    </div>
+    <main class="presentation" id="presentation">
+        <section class="slide hero active" data-bg="deep">
+            <div class="slide-content center stack-lg hero-shell">
+                <div class="institution-lockup">
+                    <img class="institution-logo" src="assets/its_logo_official.png" alt="Lambang resmi Institut Teknologi Sepuluh Nopember.">
+                    <div class="institution-copy">
+                        <p class="institution-name">Institut Teknologi Sepuluh Nopember</p>
+                        <p class="institution-meta">Program Studi S1 Teknologi Kedokteran</p>
+                    </div>
+                </div>
+                <div class="eyebrow hero-kicker">Kuliah Interaktif &bull; 2 Jam</div>
+                <h1>Ketika Teknologi Medis Terlalu Pintar untuk Manusianya</h1>
+                <p class="lead">Bukan sekadar teori desain, tetapi cara berpikir untuk merancang teknologi kesehatan yang berguna, aman, masuk akal secara klinis, dan benar-benar dipakai.</p>
+                <div class="tag-row">
+                    <span class="tag">Berbasis Kasus</span>
+                    <span class="tag">Human-Centered</span>
+                    <span class="tag">Patient Safety</span>
+                </div>
+            </div>
+            <div class="grid-glow"></div>
+        </section>
+
+        <section class="slide" data-bg="paper">
+            <div class="slide-content stack-lg">
+                <div class="eyebrow dark">THE HOOK</div>
+                <h2>Apa yang kalian lihat pada sistem yang sama?</h2>
+                <div class="split-grid">
+                    <article class="panel">
+                        <h3>Sebagai anak teknik</h3>
+                        <ul class="clean-list">
+                            <li>Real-time data</li>
+                            <li>Sensor dan integrasi</li>
+                            <li>Otomasi dan efisiensi</li>
+                            <li>Dashboard dan kontrol</li>
+                        </ul>
+                    </article>
+                    <article class="panel danger">
+                        <h3>Sebagai perawat jam 3 pagi</h3>
+                        <ul class="clean-list">
+                            <li>Noise yang melelahkan</li>
+                            <li>Alarm yang sulit dibedakan</li>
+                            <li>Layar yang terlalu padat</li>
+                            <li>Risiko salah baca di bawah tekanan</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="evidence-grid two-col-evidence">
+                    <figure class="evidence-card">
+                        <div class="evidence-frame expectation-frame has-image screenshot-frame">
+                            <span class="evidence-kicker">Expectation</span>
+                            <img class="evidence-img" src="assets/hook_expectation.jpg" alt="Screenshot OpenEMR yang terlihat jauh lebih rapi dan terkontrol daripada realita klinis." />
+                        </div>
+                        <figcaption>Layar EMR yang relatif terstruktur dan terasa terkendali bila dilihat sendiri, tanpa gangguan dunia nyata di sekelilingnya.</figcaption>
+                    </figure>
+                    <figure class="evidence-card">
+                        <div class="evidence-frame reality-frame has-image photo-frame">
+                            <span class="evidence-kicker">Reality</span>
+                            <img class="evidence-img" src="assets/hook_reality.jpg" alt="Monitor pasien nyata di rumah sakit dengan konteks fisik dan perangkat yang jauh lebih kompleks daripada mockup ideal." />
+                        </div>
+                        <figcaption>Monitor pasien nyata di ruang klinis: perangkat keras, konteks fisik, dan sinyal yang harus dibaca dalam kondisi tidak ideal.</figcaption>
+                    </figure>
+                </div>
+                <p class="statement">Di kesehatan, antarmuka bukan sekadar layar. Ia ikut membentuk keputusan, perhatian, dan keselamatan.</p>
+                <p class="micro-note">Glanceability rule: jika makna penting tidak tertangkap dalam 3 detik, desainnya belum cukup baik.</p>
+            </div>
+        </section>
+
+        <section class="slide" data-bg="deep">
+            <div class="slide-content stack-lg">
+                <div class="eyebrow">THESIS</div>
+                <h2>In healthcare, a good idea is not enough.</h2>
+                <div class="three-up">
+                    <article class="card glow">
+                        <h3>Desirable</h3>
+                        <p>Memecahkan masalah nyata bagi pasien, klinisi, caregiver, atau administrator.</p>
+                    </article>
+                    <article class="card glow">
+                        <h3>Safe</h3>
+                        <p>Tetap dapat dipakai saat user lelah, tergesa, terganggu, atau jaringan gagal.</p>
+                    </article>
+                    <article class="card glow">
+                        <h3>Implementable</h3>
+                        <p>Bisa masuk ke workflow, budaya kerja, regulasi, dan infrastruktur nyata.</p>
+                    </article>
+                </div>
+                <p class="micro-note light-note">Desirability memulai inovasi. Safety dan implementasi menentukan apakah inovasi itu bertahan hidup.</p>
+            </div>
+        </section>
+
+        <section class="slide" data-bg="warm">
+            <div class="slide-content stack-lg">
+                <div class="eyebrow dark">RHYTHM</div>
+                <h2>Cara main kelas ini</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="time">0-15</span>
+                        <div>
+                            <h3>Paradigm Shift</h3>
+                            <p>Menghancurkan techno-solutionism.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="time">15-35</span>
+                        <div>
+                            <h3>The 5 Lenses</h3>
+                            <p>Kerangka berpikir inovator medtech.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="time">35-95</span>
+                        <div>
+                            <h3>Case Lab</h3>
+                            <p>Kasus nyata, pembongkaran, dan redesign.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="time">95-115</span>
+                        <div>
+                            <h3>Interactive Studio</h3>
+                            <p>Red Teaming dan design sprint singkat.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="time">115-120</span>
+                        <div>
+                            <h3>Closing</h3>
+                            <p>Memilih jenis inovator seperti apa Anda ingin menjadi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide" data-bg="paper">
+            <div class="slide-content stack-lg">
+                <div class="eyebrow dark">BIAS TO BREAK</div>
+                <h2>Engineer’s Bias / Techno-solutionism</h2>
+                <div class="comparison">
+                    <article class="compare-card wrong">
+                        <h3>Pola pikir yang menyesatkan</h3>
+                        <ul class="clean-list">
+                            <li>Tambah fitur pasti tambah nilai</li>
+                            <li>Lebih banyak data pasti lebih baik</li>
+                            <li>Lebih banyak alarm pasti lebih aman</li>
+                            <li>Kalau user bingung, berarti user-nya kurang terlatih</li>
+                        </ul>
+                    </article>
+                    <article class="compare-card right">
+                        <h3>Pertanyaan yang lebih matang</h3>
+                        <ul class="clean-list">
+                            <li>Apa pekerjaan nyata yang sedang dibantu?</li>
+                            <li>Beban kognitif apa yang ditambah atau dikurangi?</li>
+                            <li>Apa yang terjadi saat sistem gagal?</li>
+                            <li>Workflow siapa yang terdampak?</li>
+                        </ul>
+                    </article>
+                </div>
+                <p class="micro-note">Startup folklore berkata "move fast and break things". Kesehatan dimulai dari prinsip: first, do no harm.</p>
+            </div>
+        </section>
+
+        <section class="slide" data-bg="deep">
+            <div class="slide-content stack-lg">
+                <div class="eyebrow">WHY HEALTHCARE IS DIFFERENT</div>
+                <h2>Healthcare is not just high-tech. It is high-consequence.</h2>
+                <div class="feature-grid">
+                    <article class="tile">
+                        <h3>Patient Safety</h3>
+                        <p>Salah desain bisa berkontribusi pada keterlambatan, salah tindakan, atau missed warning.</p>
+                    </article>
+                    <article class="tile">
+                        <h3>Workflow Complexity</h3>
+                        <p>Pasien, dokter, perawat, farmasi, lab, admin, dan keluarga saling terhubung.</p>
+                    </article>
+                    <article class="tile">
+                        <h3>Uncertainty</h3>
+                        <p>Keputusan klinis jarang deterministik. Banyak bekerja dalam probabilitas dan ambiguity.</p>
+                    </article>
+                    <article class="tile">
+                        <h3>Pressure</h3>
+                        <p>Keletihan, kebisingan, shift panjang, dan gangguan konstan adalah kondisi normal.</p>
+                    </article>
+                    <article class="tile">
+                        <h3>Regulation</h3>
+                        <p>Privasi, keamanan data, standar perangkat medis, dan akuntabilitas tidak bisa diabaikan.</p>
+                    </article>
+                </div>
+                <p class="micro-note light-note">Kesalahan di e-commerce membuat orang batal belanja. Kesalahan di klinik bisa menunda tindakan atau membahayakan pasien.</p>
+            </div>
+        </section>
+
+        <section class="slide" data-bg="warm">
+            <div class="slide-content stack-lg">
+                <div class="eyebrow dark">THE FRAMEWORK</div>
+                <h2>The 5 Lenses of MedTech Innovation</h2>
+                <div class="lens-grid">
+                    <article class="lens-card">
+                        <span class="lens-num">1</span>
+                        <h3>Empathy</h3>
+                        <p>Apakah ini menyelesaikan kebutuhan nyata pengguna?</p>
+                    </article>
+                    <article class="lens-card">
+                        <span class="lens-num">2</span>
+                        <h3>Safety &amp; Usability</h3>
+                        <p>Apakah tetap aman saat user lelah, sibuk, atau memakai APD?</p>
+                    </article>
+                    <article class="lens-card">
+                        <span class="lens-num">3</span>
+                        <h3>Systems</h3>
+                        <p>Apakah memperbaiki satu titik tetapi merusak unit lain?</p>
+                    </article>
+                    <article class="lens-card">
+                        <span class="lens-num">4</span>
+                        <h3>Clinical</h3>
+                        <p>Apakah membantu clinical reasoning, bukan menambah noise?</p>
+                    </article>
+                    <article class="lens-card">
+                        <span class="lens-num">5</span>
+                        <h3>Implementation</h3>
+                        <p>Apakah realistis untuk diadopsi, diintegrasikan, dan dipertahankan?</p>
+                    </article>
+                </div>
+                <p class="micro-note">Pakai lima lensa ini untuk membaca kasus, merancang prototipe, dan mengkritik tugas akhir.</p>
+            </div>
+        </section>
+        <section class="slide" data-bg="paper">
+            <div class="slide-content stack-lg">
+                <div class="eyebrow dark">LENS 1</div>
+                <h2>Design Thinking, diterjemahkan ke bahasa ITS</h2>
+                <div class="five-stage-grid">
+                    <article class="stage-card">
+                        <h3>Empathize</h3>
+                        <p>Akuisisi data kualitatif dari lapangan, bukan menebak dari lab.</p>
+                    </article>
+                    <article class="stage-card">
+                        <h3>Define</h3>
+                        <p>Memilih problem yang tepat sebelum jatuh cinta pada solusi.</p>
+                    </article>
+                    <article class="stage-card">
+                        <h3>Ideate</h3>
+                        <p>Menghasilkan banyak opsi sebelum mengunci arah.</p>
+                    </article>
+                    <article class="stage-card">
+                        <h3>Prototype</h3>
+                        <p>Menguji asumsi murah dan cepat, sering kali cukup dengan kertas.</p>
+                    </article>
+                    <article class="stage-card">
+                        <h3>Test</h3>
+                        <p>Belajar dari user nyata, bukan dari asumsi tim sendiri.</p>
+                    </article>
+                </div>
+                <p class="micro-note">Bukan soal sticky notes. Ini soal mencegah kita jatuh cinta pada solusi yang salah.</p>
+            </div>
+        </section>
+
+        <section class="slide" data-bg="deep">
+            <div class="slide-content stack-lg">
+                <div class="eyebrow">LENS 2</div>
+                <h2>Human Factors Engineering</h2>
+                <div class="comparison compact">
+                    <article class="compare-card wrong">
+                        <h3>User Error</h3>
+                        <p>"Perawat salah menekan tombol, berarti perawatnya ceroboh."</p>
+                    </article>
+                    <article class="compare-card right">
+                        <h3>Use Error</h3>
+                        <p>"Kalau tombol mudah disalahtekan, berarti desainnya membiarkan kegagalan."</p>
+                    </article>
+                </div>
+                <div class="three-up">
+                    <article class="card glow">
+                        <h3>Cognitive Load</h3>
+                        <p>Memori kerja manusia terbatas. Antarmuka padat dan alarm berlebih akan menghancurkan fokus.</p>
+                    </article>
+                    <article class="card glow">
+                        <h3>Context of Use</h3>
+                        <p>IGD, ICU, rawat jalan, dan rumah pasien punya tekanan yang sangat berbeda.</p>
+                    </article>
+                    <article class="card glow">
+                        <h3>Error Prevention</h3>
+                        <p>Hard limits, default cerdas, dan desain tahan salah lebih kuat daripada sekadar warning pop-up.</p>
+                    </article>
+                </div>
+                <p class="micro-note light-note">Manusia bukan bug pada sistem. Manusia adalah bagian dari spesifikasi desain.</p>
+            </div>
+        </section>
+
+        <section class="slide" data-bg="paper">
+            <div class="slide-content stack-lg">
+                <div class="eyebrow dark">LENSES 3-5</div>
+                <h2>Tiga mindset yang membuat Design Thinking matang di kesehatan</h2>
+                <div class="three-up">
+                    <article class="card bordered">
+                        <h3>Systems Thinking</h3>
+                        <p>Unit desain yang sebenarnya bukan app, melainkan workflow dan ekosistem kerja.</p>
+                        <p class="small">Tanya: jika satu proses dipercepat, siapa yang akan overload?</p>
+                    </article>
+                    <article class="card bordered">
+                        <h3>Clinical Reasoning</h3>
+                        <p>Dokter bekerja dengan ketidakpastian, prioritas, dan tanggung jawab profesional.</p>
+                        <p class="small">Tanya: apakah output sistem ini bisa dipercaya dan ditindaklanjuti?</p>
+                    </article>
+                    <article class="card bordered">
+                        <h3>Implementation Thinking</h3>
+                        <p>Inovasi gagal bukan hanya karena desain buruk, tetapi juga karena tidak bisa hidup di organisasi nyata.</p>
+                        <p class="small">Tanya: siapa melatih, siapa membayar, siapa menjaga integrasi?</p>
+                    </article>
+                </div>
+                <p class="micro-note">Tanpa tiga lensa ini, Design Thinking bisa menghasilkan solusi yang menarik, tetapi rapuh saat menyentuh dunia klinis.</p>
+            </div>
+        </section>
+
+        <section class="slide section" data-bg="deep">
+            <div class="slide-content center stack-lg">
+                <div class="eyebrow">CASE LAB</div>
+                <h1>Bedah Kasus, Bukan Hanya Definisi</h1>
+                <p class="lead">Untuk setiap kasus, pertanyaannya bukan "teknologinya keren atau tidak?", tetapi "di mana desainnya gagal, dan bagaimana kita memperbaikinya?"</p>
+            </div>
+        </section>
+
+        <section class="slide" data-bg="paper">
+            <div class="slide-content stack-lg">
+                <div class="case-label">CASE 1</div>
+                <h2>EMR Burden: ketika alat bantu berubah menjadi beban</h2>
+                <div class="split-grid">
+                    <article class="panel">
+                        <h3>Gejala di lapangan</h3>
+                        <ul class="clean-list">
+                            <li>Terlalu banyak klik untuk tugas sederhana</li>
+                            <li>Input berulang dan note bloat</li>
+                            <li>Dropdown, satuan, dan tampilan angka yang mudah membingungkan</li>
+                            <li>Warning terlalu sering sehingga diabaikan</li>
+                        </ul>
+                    </article>
+                    <article class="panel accent spoiler-wrap" data-spoiler-label="Reveal redesign">
+                        <h3>Arah redesign</h3>
+                        <ul class="clean-list">
+                            <li>Role-based dashboard</li>
+                            <li>Default cerdas dan auto-fill kontekstual</li>
+                            <li>Hard limits untuk parameter berisiko tinggi</li>
+                            <li>Prioritization: yang penting tampil dulu</li>
+                        </ul>
+                    </article>
+                </div>
+                <figure class="evidence-card wide-evidence">
+                    <div class="evidence-frame emr-frame has-image screenshot-frame">
+                        <span class="evidence-kicker">Forensic Visual</span>
+                        <img class="evidence-img" src="assets/emr_case.jpg" alt="Screenshot layar prescribing OpenEMR yang menunjukkan banyak field, dropdown, dan potensi salah input." />
+                        <div class="evidence-hotspots">
+                            <span class="hotspot">mg</span>
+                            <span class="hotspot danger">mg/kg</span>
+                            <span class="hotspot">dose</span>
+                            <span class="hotspot">warning</span>
+                        </div>
+                    </div>
+                    <figcaption>Layar prescribing OpenEMR ini cukup untuk menunjukkan bagaimana field, dropdown, dan unit dosis bisa menjadi medan kesalahan jika tidak didesain dengan guardrail yang kuat.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="slide" data-bg="warm">
+            <div class="slide-content stack-lg">
+                <div class="eyebrow dark">WHAT FAILED?</div>
+                <h2>Pelajaran dari kasus EMR</h2>
+                <div class="lens-strip">
+                    <div class="lens-chip">Empathy: kerja klinis nyata tidak dipahami</div>
+                    <div class="lens-chip">Safety: pop-up bukan mitigasi yang cukup kuat</div>
+                    <div class="lens-chip">Systems: dokumentasi menjadi beban, bukan bantuan</div>
+                    <div class="lens-chip">Clinical: data penting tenggelam oleh noise</div>
+                    <div class="lens-chip">Implementation: training tidak bisa mengimbangi desain buruk</div>
+                </div>
+                <p class="statement dark-text">Training tidak pernah cukup untuk menebus desain yang salah arah.</p>
+            </div>
+        </section>
+        <section class="slide" data-bg="deep">
+            <div class="slide-content stack-lg">
+                <div class="case-label light">CASE 2</div>
+                <h2>Alarm Fatigue di ICU</h2>
+                <div class="three-up">
+                    <article class="card glow">
+                        <h3>Problem</h3>
+                        <p>Terlalu banyak bunyi yang tidak actionable membuat staf kebal terhadap alarm.</p>
+                    </article>
+                    <article class="card glow">
+                        <h3>Human Factors Failure</h3>
+                        <p>Semua sinyal terdengar sama, padahal urgensinya berbeda.</p>
+                    </article>
+                    <article class="card glow">
+                        <h3>Creative Redesign</h3>
+                        <p>Stratifikasi alarm, visual hierarchy, threshold kontekstual, dan eskalasi bertahap.</p>
+                    </article>
+                </div>
+                <figure class="evidence-card wide-evidence dark-evidence">
+                    <div class="evidence-frame alarm-frame has-image screenshot-frame">
+                        <span class="evidence-kicker">Audio + Visual Overload</span>
+                        <img class="evidence-img" src="assets/alarm_overload.svg" alt="Visual simulasi overload alarm ICU dengan waveform, notifikasi, dan prioritas yang saling bertabrakan.">
+                    </div>
+                    <figcaption>Visual lokal ini sengaja dibuat padat untuk mensimulasikan kondisi ketika terlalu banyak sinyal bersaing memperebutkan perhatian staf.</figcaption>
+                </figure>
+                <p class="micro-note light-note">Ketika hampir semua bunyi terasa penting, tidak ada yang benar-benar terdengar penting.</p>
+            </div>
+        </section>
+
+        <section class="slide" data-bg="paper">
+            <div class="slide-content stack-lg">
+                <div class="case-label">CASE 3</div>
+                <h2>Telemedicine dan antrean untuk pengguna nyata, bukan pengguna ideal</h2>
+                <div class="comparison">
+                    <article class="compare-card wrong">
+                        <h3>Desain yang sering gagal</h3>
+                        <ul class="clean-list">
+                            <li>Login berlapis</li>
+                            <li>Istilah teknis</li>
+                            <li>Semua dipaksa lewat layar</li>
+                            <li>Mengandaikan internet stabil dan literasi digital tinggi</li>
+                        </ul>
+                    </article>
+                    <article class="compare-card right spoiler-wrap" data-spoiler-label="Reveal redesign">
+                        <h3>Redesign untuk lansia dan konteks Indonesia</h3>
+                        <ul class="clean-list">
+                            <li>Tombol besar dan alur singkat</li>
+                            <li>Mode caregiver / proxy</li>
+                            <li>Hybrid flow: WA, kiosk, front desk</li>
+                            <li>Low-bandwidth dan bahasa sederhana</li>
+                        </ul>
+                    </article>
+                </div>
+                <p class="micro-note">Akses digital yang baik tidak memaksa semua orang menjadi pengguna digital ideal.</p>
+            </div>
+        </section>
+
+        <section class="slide" data-bg="warm">
+            <div class="slide-content stack-lg">
+                <div class="case-label">CASE 4</div>
+                <h2>AI di klinik: akurat belum tentu dipercaya</h2>
+                <div class="split-grid">
+                    <article class="panel">
+                        <h3>Masalah</h3>
+                        <p>AI bisa akurat secara model, tetapi ditolak jika tidak explainable, tidak cocok dengan workflow, atau membebani tanggung jawab klinisi.</p>
+                    </article>
+                    <article class="panel accent spoiler-wrap" data-spoiler-label="Reveal prinsip desain">
+                        <h3>Prinsip desain</h3>
+                        <ul class="clean-list">
+                            <li>Tampilkan alasan, bukan hanya label akhir</li>
+                            <li>Berikan confidence dan uncertainty</li>
+                            <li>Sediakan override yang jelas</li>
+                            <li>Biarkan manusia tetap memegang keputusan akhir</li>
+                        </ul>
+                    </article>
+                </div>
+                <figure class="evidence-card wide-evidence">
+                    <div class="evidence-frame heatmap-frame dual-image-frame">
+                        <span class="evidence-kicker">Explainable AI</span>
+                        <div class="dual-image-grid">
+                            <div class="image-pane screenshot-frame">
+                                <img class="evidence-img" src="assets/ai_original.jpg" alt="Chest X-ray asli sebelum diberi penjelasan visual dari model AI." />
+                                <span class="image-label">Original X-ray</span>
+                            </div>
+                            <div class="image-pane screenshot-frame">
+                                <img class="evidence-img" src="assets/ai_heatmap.jpg" alt="Heatmap Grad-CAM pada chest X-ray yang menunjukkan area perhatian model AI." />
+                                <span class="image-label">Grad-CAM / Heatmap</span>
+                            </div>
+                        </div>
+                    </div>
+                    <figcaption>Kiri: chest X-ray asli. Kanan: Grad-CAM yang menunjukkan area perhatian model, sehingga AI bisa dijelaskan, bukan sekadar dipercaya secara buta.</figcaption>
+                </figure>
+                <p class="statement dark-text">AI should be a co-pilot, not an autopilot.</p>
+            </div>
+        </section>
+
+        <section class="slide" data-bg="paper">
+            <div class="slide-content stack-lg">
+                <div class="case-label">CASE 5</div>
+                <h2>Adventure Series MRI: redesign experience, not just equipment</h2>
+                <div class="split-grid">
+                    <article class="panel">
+                        <h3>Masalah</h3>
+                        <p>Mesin MRI sangat maju secara teknis, tetapi pengalaman pasien anak penuh rasa takut dan membutuhkan sedasi lebih sering.</p>
+                    </article>
+                    <article class="panel accent spoiler-wrap" data-spoiler-label="Reveal reframing">
+                        <h3>Pembalikan sudut pandang</h3>
+                        <p>Solusinya bukan merombak mesin dari nol, melainkan mendesain ulang pengalaman: cerita, visual, suasana, dan makna.</p>
+                    </article>
+                </div>
+                <div class="evidence-grid two-col-evidence">
+                    <figure class="evidence-card">
+                        <div class="evidence-frame sterile-frame has-image photo-frame">
+                            <span class="evidence-kicker">Before</span>
+                            <img class="evidence-img" src="assets/pirate_before.jpg" alt="Ruang MRI konvensional yang terlihat steril, dingin, dan mengintimidasi." />
+                        </div>
+                        <figcaption>Ruang MRI konvensional: steril, terang, dan mudah terasa asing atau menakutkan bagi pasien anak.</figcaption>
+                    </figure>
+                    <figure class="evidence-card">
+                        <div class="evidence-frame adventure-frame has-image photo-frame">
+                            <span class="evidence-kicker">After</span>
+                            <img class="evidence-img" src="assets/pirate_after_mri.jpg" alt="Adventure Series MRI dengan lingkungan bertema yang lebih ramah dan imajinatif untuk pasien anak." />
+                        </div>
+                        <figcaption>Adventure Series MRI: mesin dan ruang diberi konteks cerita, sehingga pengalaman klinis berubah tanpa harus mendesain ulang teknologi inti dari nol.</figcaption>
+                    </figure>
+                </div>
+                <p class="micro-note">Kadang yang perlu di-redesign bukan device-nya, tetapi experience-nya.</p>
+            </div>
+        </section>
+
+        <section class="slide" data-bg="deep">
+            <div class="slide-content stack-lg">
+                <div class="case-label light">CASE 6</div>
+                <h2>SATUSEHAT: ketika inovasi berarti menyatukan ekosistem</h2>
+                <div class="three-up">
+                    <article class="card glow">
+                        <h3>Masalah lama</h3>
+                        <p>Data kesehatan tersebar di banyak silo, sulit dipertukarkan, dan menyulitkan kesinambungan layanan.</p>
+                    </article>
+                    <article class="card glow">
+                        <h3>Pelajaran sistemik</h3>
+                        <p>Transformasi nasional bukan cuma membuat app, tetapi menyatukan bahasa data, governance, dan interoperabilitas.</p>
+                    </article>
+                    <article class="card glow">
+                        <h3>Relevansi untuk kalian</h3>
+                        <p>Medtech yang matang harus berpikir lintas fasilitas, lintas aktor, dan lintas standar.</p>
+                    </article>
+                </div>
+                <figure class="evidence-card wide-evidence dark-evidence">
+                    <div class="evidence-frame system-frame has-image screenshot-frame">
+                        <span class="evidence-kicker">Systems View</span>
+                        <img class="evidence-img" src="assets/satusehat_systems.svg" alt="Diagram interoperabilitas SATUSEHAT yang menghubungkan pasien, faskes, laboratorium, farmasi, dan kementerian.">
+                    </div>
+                    <figcaption>Alih-alih satu app tunggal, inovasi nasional seperti SATUSEHAT menuntut bahasa data bersama, alur pertukaran yang konsisten, dan governance lintas aktor.</figcaption>
+                </figure>
+                <p class="micro-note light-note">Satu arsitektur sistem yang benar bisa membantu ribuan pasien. Satu asumsi desain yang salah bisa merusak dalam skala sistem.</p>
+            </div>
+        </section>
+
+        <section class="slide" data-bg="paper">
+            <div class="slide-content stack-lg">
+                <div class="eyebrow dark">FAILURE MATTERS</div>
+                <h2>Good medical technology survives failure safely</h2>
+                <div class="three-up">
+                    <article class="card bordered">
+                        <h3>Graceful Degradation</h3>
+                        <p>Jika jaringan gagal, sistem turun fungsi secara aman, bukan sekadar blank.</p>
+                    </article>
+                    <article class="card bordered">
+                        <h3>Hard Limits</h3>
+                        <p>Untuk parameter berbahaya, lebih baik lock-out dan verifikasi daripada warning lembek.</p>
+                    </article>
+                    <article class="card bordered">
+                        <h3>Human Override</h3>
+                        <p>Teknologi harus audit-able, traceable, dan bisa diambil alih manusia saat perlu.</p>
+                    </article>
+                </div>
+                <p class="micro-note">Perangkat terbaik bukan yang tidak pernah gagal, tetapi yang tahu cara gagal dengan aman.</p>
+            </div>
+        </section>
+
+        <section class="slide section" data-bg="warm">
+            <div class="slide-content center stack-lg">
+                <div class="eyebrow dark">INTERACTIVE STUDIO</div>
+                <h1>Sekarang giliran kalian menyerang masalahnya</h1>
+                <p class="lead dark-text">Bukan sekadar menjawab soal, tetapi membongkar asumsi, membaca risiko, dan mendesain ulang sistem.</p>
+            </div>
+        </section>
+        <section class="slide" data-bg="paper">
+            <div class="slide-content stack-lg">
+                <div class="eyebrow dark">ACTIVITY 1</div>
+                <h2>Bad Design Detective</h2>
+                <div class="definition-banner">
+                    Pakai satu kasus dari sesi sebelumnya: <strong>EMR burden</strong>, <strong>alarm fatigue di ICU</strong>, <strong>telemedicine untuk lansia</strong>, atau <strong>AI yang akurat tetapi tidak dipercaya klinisi</strong>.
+                </div>
+                <div class="split-grid">
+                    <article class="panel">
+                        <h3>Tugas kelompok</h3>
+                        <ul class="clean-list">
+                            <li>Tentukan siapa user utamanya</li>
+                            <li>Temukan 3 titik friksi atau risiko</li>
+                            <li>Identifikasi lensa mana yang gagal</li>
+                            <li>Pilih 1 redesign paling berdampak</li>
+                        </ul>
+                    </article>
+                    <article class="panel accent">
+                        <h3>Pertanyaan penuntun</h3>
+                        <ul class="clean-list">
+                            <li>Apakah masalah ini benar-benar desain, atau workflow?</li>
+                            <li>Apa yang terjadi saat user lelah?</li>
+                            <li>Apakah solusi ini memindahkan kerja atau mengurangi kerja?</li>
+                            <li>Siapa user tersembunyi yang sering dilupakan?</li>
+                        </ul>
+                    </article>
+                </div>
+                <p class="micro-note">Output: 1 diagnosis masalah, 1 redesign utama, 1 alasan kenapa itu paling berdampak. Kalau bingung memilih, mulai dari EMR atau alarm fatigue.</p>
+            </div>
+        </section>
+
+        <section class="slide" data-bg="deep">
+            <div class="slide-content stack-lg">
+                <div class="eyebrow">ACTIVITY 2</div>
+                <h2>Red Teaming</h2>
+                <div class="definition-banner">
+                    Ide pemicu: smartwatch lansia yang otomatis menelepon ambulans ketika saturasi turun.
+                </div>
+                <div class="four-up">
+                    <article class="mini-card">
+                        <h3>Tim Sistem</h3>
+                        <p>Apakah IGD akan kolaps oleh false alarm?</p>
+                    </article>
+                    <article class="mini-card">
+                        <h3>Tim Risiko</h3>
+                        <p>Apa yang terjadi jika baterai habis, sensor longgar, atau koneksi putus?</p>
+                    </article>
+                    <article class="mini-card">
+                        <h3>Tim Klinis</h3>
+                        <p>Apakah saturasi rendah selalu berarti ambulans harus dikirim?</p>
+                    </article>
+                    <article class="mini-card">
+                        <h3>Tim Implementasi</h3>
+                        <p>Siapa membayar, siapa memonitor, siapa bertanggung jawab?</p>
+                    </article>
+                </div>
+                <p class="micro-note light-note">Tugas kalian bukan langsung menyukai ide ini. Tugas kalian adalah menghancurkannya dulu, lalu menyelamatkannya.</p>
+            </div>
+        </section>
+
+        <section class="slide" data-bg="warm">
+            <div class="slide-content stack-lg">
+                <div class="eyebrow dark">ACTIVITY 3</div>
+                <h2>Mini Sprint Challenge</h2>
+                <div class="challenge-grid">
+                    <article class="challenge-card">
+                        <span class="letter">A</span>
+                        <h3>Antrian Puskesmas Lansia</h3>
+                        <p>Katarak ringan, jari tremor, gaptek, dan internet tidak stabil.</p>
+                    </article>
+                    <article class="challenge-card">
+                        <span class="letter">B</span>
+                        <h3>Alarm ICU</h3>
+                        <p>Terlalu banyak false alarm, staf mulai kebal terhadap bunyi kritis.</p>
+                    </article>
+                    <article class="challenge-card">
+                        <span class="letter">C</span>
+                        <h3>Portal Hasil Lab</h3>
+                        <p>Pasien cemas, dokter sibuk, angka tidak punya makna bagi pengguna.</p>
+                    </article>
+                    <article class="challenge-card">
+                        <span class="letter">D</span>
+                        <h3>AI Decision Support</h3>
+                        <p>Model akurat, tetapi klinisi tidak percaya dan tidak mau memakainya.</p>
+                    </article>
+                </div>
+                <div class="lens-strip">
+                    <div class="lens-chip">Empathy map</div>
+                    <div class="lens-chip">POV statement</div>
+                    <div class="lens-chip">3 redesign ideas</div>
+                    <div class="lens-chip">1 paper prototype</div>
+                    <div class="lens-chip">Uji dengan 5 lenses</div>
+                </div>
+                <p class="micro-note">Pilih satu kasus. Desain cepat. Presentasi singkat. Fokus pada logika desain, bukan kemewahan fitur.</p>
+            </div>
+        </section>
+
+        <section class="slide" data-bg="paper">
+            <div class="slide-content stack-lg">
+                <div class="eyebrow dark">FIELD HACKS</div>
+                <h2>Genius hacks untuk anak Teknologi Kedokteran</h2>
+                <div class="hack-grid">
+                    <article class="hack-card">
+                        <h3>3 A.M. Test</h3>
+                        <p>Kalau desain hanya masuk akal saat user segar, desain itu belum aman.</p>
+                    </article>
+                    <article class="hack-card">
+                        <h3>Bloody Glove Test</h3>
+                        <p>Uji interaksi dengan sarung tangan dan kondisi basah. Touchscreen bukan jawaban untuk semua konteks.</p>
+                    </article>
+                    <article class="hack-card">
+                        <h3>Shadowing &gt; Surveying</h3>
+                        <p>User sering menjelaskan SOP ideal, bukan workflow nyata. Observasi memberi insight yang lebih jujur.</p>
+                    </article>
+                    <article class="hack-card">
+                        <h3>Cardboard Before Code</h3>
+                        <p>Gagal di kertas jauh lebih murah daripada gagal di bangsal.</p>
+                    </article>
+                </div>
+                <p class="micro-note">Kalau nanti kalian membuat TA, prototipe, atau startup, empat hack ini akan menyelamatkan kalian dari banyak asumsi yang mahal.</p>
+            </div>
+        </section>
+
+        <section class="slide" data-bg="deep">
+            <div class="slide-content stack-lg">
+                <div class="eyebrow">TAKEAWAYS</div>
+                <h2>Apa yang harus dibawa pulang</h2>
+                <div class="takeaway-list">
+                    <div class="takeaway-item">
+                        <span class="count">1</span>
+                        <p>Inovasi digital kesehatan adalah desain sistem, bukan sekadar desain layar.</p>
+                    </div>
+                    <div class="takeaway-item">
+                        <span class="count">2</span>
+                        <p>Design Thinking membantu menemukan problem yang layak diselesaikan.</p>
+                    </div>
+                    <div class="takeaway-item">
+                        <span class="count">3</span>
+                        <p>Human Factors membantu memastikan solusi tetap aman saat manusia tidak berada dalam kondisi ideal.</p>
+                    </div>
+                    <div class="takeaway-item">
+                        <span class="count">4</span>
+                        <p>Systems thinking, clinical reasoning, dan implementation thinking membedakan ide bagus dari inovasi yang benar-benar bekerja.</p>
+                    </div>
+                    <div class="takeaway-item">
+                        <span class="count">5</span>
+                        <p>Tugas kalian bukan membuat teknologi yang keren, tetapi teknologi yang membuat perawatan lebih aman, lebih masuk akal, dan lebih manusiawi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide hero" data-bg="warm">
+            <div class="slide-content center stack-lg">
+                <div class="eyebrow dark">CLOSING PROMPT</div>
+                <h1>Teknologi kedokteran mana yang menurut kalian perlu didesain ulang total?</h1>
+                <p class="lead dark-text">Jawab dengan 3 hal: siapa user yang paling terdampak, lensa apa yang gagal, dan redesign pertama apa yang paling layak diuji. Suatu hari, sistem seperti inilah yang akan menangani keluarga kalian.</p>
+                <div class="tag-row">
+                    <span class="tag dark">Empathy</span>
+                    <span class="tag dark">Safety</span>
+                    <span class="tag dark">Systems</span>
+                    <span class="tag dark">Clinical</span>
+                    <span class="tag dark">Implementation</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

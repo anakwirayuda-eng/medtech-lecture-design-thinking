@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">SATUSEHAT systems view</title>
+  <desc id="desc">A systems map showing SATUSEHAT at the center of connected healthcare actors and data flows.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0b1820"/>
+      <stop offset="100%" stop-color="#163341"/>
+    </linearGradient>
+    <linearGradient id="node" x1="0" x2="1">
+      <stop offset="0%" stop-color="#203b46"/>
+      <stop offset="100%" stop-color="#1a2f39"/>
+    </linearGradient>
+    <linearGradient id="center" x1="0" x2="1">
+      <stop offset="0%" stop-color="#2d6762"/>
+      <stop offset="100%" stop-color="#1f8a74"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <g opacity="0.08" stroke="#dbe7e1">
+    <path d="M0 120 H1600"/>
+    <path d="M0 260 H1600"/>
+    <path d="M0 400 H1600"/>
+    <path d="M0 540 H1600"/>
+    <path d="M0 680 H1600"/>
+    <path d="M0 820 H1600"/>
+    <path d="M180 0 V900"/>
+    <path d="M420 0 V900"/>
+    <path d="M660 0 V900"/>
+    <path d="M900 0 V900"/>
+    <path d="M1140 0 V900"/>
+    <path d="M1380 0 V900"/>
+  </g>
+
+  <text x="90" y="90" fill="#f0f4f1" font-family="Space Grotesk, Arial, sans-serif" font-size="54" font-weight="700">SATUSEHAT is not one app</text>
+  <text x="90" y="132" fill="#d2ddd9" font-family="Source Sans 3, Arial, sans-serif" font-size="28">It is a national interoperability layer across clinical actors, workflows, and data standards.</text>
+
+  <g stroke="#8eb3b8" stroke-opacity="0.32" stroke-width="4">
+    <line x1="800" y1="420" x2="370" y2="260"/>
+    <line x1="800" y1="420" x2="800" y2="210"/>
+    <line x1="800" y1="420" x2="1230" y2="260"/>
+    <line x1="800" y1="420" x2="290" y2="560"/>
+    <line x1="800" y1="420" x2="540" y2="690"/>
+    <line x1="800" y1="420" x2="1060" y2="690"/>
+    <line x1="800" y1="420" x2="1310" y2="560"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="565" y="300" width="470" height="240" rx="36" fill="url(#center)"/>
+    <text x="800" y="385" text-anchor="middle" fill="#f7faf8" font-family="Space Grotesk, Arial, sans-serif" font-size="56" font-weight="700">SATUSEHAT</text>
+    <text x="800" y="435" text-anchor="middle" fill="#e7f1ec" font-family="IBM Plex Mono, monospace" font-size="24">HL7 FHIR | Interoperability | Governance</text>
+    <text x="800" y="485" text-anchor="middle" fill="#e2efe9" font-family="Source Sans 3, Arial, sans-serif" font-size="26">Exchange layer for records, events, observations, orders, and logs</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <g transform="translate(180 170)">
+      <rect width="380" height="150" rx="28" fill="url(#node)"/>
+      <text x="32" y="56" fill="#f0f4f1" font-family="Space Grotesk, Arial, sans-serif" font-size="34" font-weight="700">SIMRS / RME Vendor</text>
+      <text x="32" y="98" fill="#d0dbd7" font-family="Source Sans 3, Arial, sans-serif" font-size="24">Orders, encounters, observations, document flows</text>
+    </g>
+
+    <g transform="translate(610 120)">
+      <rect width="380" height="150" rx="28" fill="url(#node)"/>
+      <text x="32" y="56" fill="#f0f4f1" font-family="Space Grotesk, Arial, sans-serif" font-size="34" font-weight="700">Lab &amp; Radiology</text>
+      <text x="32" y="98" fill="#d0dbd7" font-family="Source Sans 3, Arial, sans-serif" font-size="24">ServiceRequest, DiagnosticReport, imaging metadata</text>
+    </g>
+
+    <g transform="translate(1040 170)">
+      <rect width="380" height="150" rx="28" fill="url(#node)"/>
+      <text x="32" y="56" fill="#f0f4f1" font-family="Space Grotesk, Arial, sans-serif" font-size="34" font-weight="700">Pharmacy &amp; Logistics</text>
+      <text x="32" y="98" fill="#d0dbd7" font-family="Source Sans 3, Arial, sans-serif" font-size="24">Medication, KFA mapping, supply chain context</text>
+    </g>
+
+    <g transform="translate(90 485)">
+      <rect width="380" height="150" rx="28" fill="url(#node)"/>
+      <text x="32" y="56" fill="#f0f4f1" font-family="Space Grotesk, Arial, sans-serif" font-size="34" font-weight="700">Patients &amp; Mobile</text>
+      <text x="32" y="98" fill="#d0dbd7" font-family="Source Sans 3, Arial, sans-serif" font-size="24">Access, continuity, identity, personal records</text>
+    </g>
+
+    <g transform="translate(350 650)">
+      <rect width="380" height="150" rx="28" fill="url(#node)"/>
+      <text x="32" y="56" fill="#f0f4f1" font-family="Space Grotesk, Arial, sans-serif" font-size="34" font-weight="700">Puskesmas / RS / Klinik</text>
+      <text x="32" y="98" fill="#d0dbd7" font-family="Source Sans 3, Arial, sans-serif" font-size="24">Different capacities, same interoperability challenge</text>
+    </g>
+
+    <g transform="translate(870 650)">
+      <rect width="380" height="150" rx="28" fill="url(#node)"/>
+      <text x="32" y="56" fill="#f0f4f1" font-family="Space Grotesk, Arial, sans-serif" font-size="34" font-weight="700">Monitoring &amp; Audit</text>
+      <text x="32" y="98" fill="#d0dbd7" font-family="Source Sans 3, Arial, sans-serif" font-size="24">FHIR logs, transaction checks, debugging, compliance</text>
+    </g>
+
+    <g transform="translate(1130 485)">
+      <rect width="380" height="150" rx="28" fill="url(#node)"/>
+      <text x="32" y="56" fill="#f0f4f1" font-family="Space Grotesk, Arial, sans-serif" font-size="34" font-weight="700">Kemenkes / Policy Layer</text>
+      <text x="32" y="98" fill="#d0dbd7" font-family="Source Sans 3, Arial, sans-serif" font-size="24">Standards, verification, trust, and national scale</text>
+    </g>
+  </g>
+
+  <g transform="translate(92 822)">
+    <rect width="1416" height="54" rx="20" fill="rgba(255,255,255,0.06)" stroke="#8eb3b8" stroke-opacity="0.16"/>
+    <text x="26" y="36" fill="#f2f6f3" font-family="IBM Plex Mono, monospace" font-size="24">Systems lesson: medtech maturity means designing data flow, responsibility, and interoperability together.</text>
+  </g>
+</svg>

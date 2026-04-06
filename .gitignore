@@ -1,0 +1,14 @@
+node_modules/
+
+# OS / editor noise
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Office temp files
+~$*.docx
+~$*.pptx
+~$*.xlsx
+
+# Logs
+*.log
